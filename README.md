@@ -61,11 +61,11 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   Defaults to all dimensions if omitted.
 </details>
 <details>
-  <summary> <code>dimensions</code> A list of allowed biomes/biome tags</summary>
+  <summary> <code>biomes</code> A list of allowed biomes/biome tags</summary>
 
   ####
 
-  Defaults to the Vanilla overworld if omitted.
+  Defaults to all vanilla overworld if omitted.
 </details>
 <details>
   <summary> <code>placement</code> A list of allowed placements</summary>
