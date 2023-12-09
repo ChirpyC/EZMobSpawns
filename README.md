@@ -128,7 +128,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
 ```
 </details>
 <details>
-  <summary> <code>moonphases</code> A list of weathers in which spawning is allowed.</summary>
+  <summary> <code>weather</code> A list of weathers in which spawning is allowed.</summary>
 
   ####
 
@@ -204,7 +204,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
 ```
 </details>
 <details>
-  <summary> <code>groundBlocks</code> A list of blocks on which spawning is prohibited</summary>
+  <summary> <code>disallowedBlocks</code> A list of blocks on which spawning is prohibited</summary>
 
   ####
 
