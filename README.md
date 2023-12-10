@@ -164,7 +164,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > 
   > #### Example: 
   > ```
-  > "weather": ["NONE", "RAIN"]
+  > "weather": ["none", "rain"]
   > ```
 </details>
 <details>
