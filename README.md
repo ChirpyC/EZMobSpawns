@@ -9,6 +9,13 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
 </details>
 <details>
   <summary> <code>chunkRange</code> The range of chucks to attempts spawns for around each player.</summary>
+
+  ####
+
+  ##### Example: chunkRange = 3
+
+  The areas highlighted in yellow show the chunks around each player that will be used for further spawn checks:
+  <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_range.png" width="600">
 </details>
 <details>
   <summary> <code>chunkCoverage</code> The percentage of loaded chunks to run spawning on.</summary>
