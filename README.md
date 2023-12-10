@@ -240,6 +240,40 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > ```
 </details>
 <details>
+  <summary> <code>regionRestriction</code> Restricts spawning to a specified, repeatable area.</summary>
+
+  > ##
+  > 
+  > - *regionSize*: the size of the region in chunks
+  > - *repeat*: how frequently to repeat the region
+  > - *offsestX*: (optional) the number chunks to offset the region by on the x-axis. If omitted, defaults to 0
+  > - *offsestZ*: (optional) the number chunks to offset the region by on the z-axis. If omitted, defaults to 0
+  > 
+  > #### Example: 
+  > ```
+  > "regionRestriction": {"regionSize":4, "repeat": 10, "offsestX": 1, "offsestZ": 3}
+  > ```
+</details>
+<details>
+  <summary> <code>blacklistedRegions</code> Prevents spawning within specified areas.</summary>
+
+  > ##
+  > 
+  > - *startX*: the min block x-coordinate of the region
+  > - *endX*: the max block x-coordinate of the region
+  > - *startZ*: the min block z-coordinate of the region
+  > - *endZ*: the max block z-coordinate of the region
+  > 
+  > #### Example: 
+  > ```
+  > "blacklistedRegions":  [
+  >       {"startX":-256, "endX": 256, "startZ": -256, "endZ": 256},
+  >       {"startX":1000, "endX": 1100, "startZ": 2400, "endZ": 2500},
+  >       {"startX":-3000, "endX": -2900, "startZ": 600, "endZ": 700}
+  >     ]
+  > ```
+</details>
+<details>
   <summary> <code>enableDebug</code> Enables or disables debug messages to the log.</summary>
 
   > ##
