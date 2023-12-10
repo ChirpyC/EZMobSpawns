@@ -21,9 +21,9 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   
   > ##
   >
-  > Defaults to 100.
+  > Defaults to 1.0.
   > 
-  > ##### Example: 3 players, chunkRange = 3, chunkCoverage = 30%
+  > ##### Example: 3 players, chunkRange = 3, chunkCoverage = 0.3
   >
   > The yellow squares show the chunks that have been randomly selected for additional spawn checks:
   > # <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_chunk_coverage.png" width="600">
@@ -35,7 +35,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > 
   > Defaults to 100.
   > 
-  > ##### Example: 1 player, chunkRange = 3, chunkCoverage = 44%, maxPtsPerChunk = 3
+  > ##### Example: 1 player, chunkRange = 3, chunkCoverage = 0.44, maxPtsPerChunk = 3
   > 
   > The red x's show locations that have been randomly selected as potential spawn points:
   > <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_maxPtsPerChunk.png" width="600">
