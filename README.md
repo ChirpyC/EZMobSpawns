@@ -96,7 +96,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
 
   > ##
   > 
-  > Accepted values are: `surface`, `underground`, `in_water`,  `cave_water`, `in_lava`
+  > Accepted values are: `surface`, `underground`, `in_water`,  `cave_water`, `in_lava`, `air`
   > 
   > Defaults to surface placement if omitted.
 </details>
