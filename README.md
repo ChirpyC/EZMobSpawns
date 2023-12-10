@@ -54,7 +54,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   <summary> <code>groupName</code> A descriptor of the spawn group. Will appear in debug logs if specified.</summary>
 </details>
 <details>
-  <summary> <code>mobs</code>* A list of mobs which may be selected to spawn from the group.</summary>
+  <summary> <code>mobs</code> A list of mobs which may be selected to spawn from the group.</summary>
 
   > ##
   > 
