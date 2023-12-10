@@ -256,7 +256,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   >      {"areaSize":1, "repeat": 2, "offsestX": 1, "offsestZ": 1}
   >    ]
   > ```
-  > Spawning is permitted in the yellow and orange regions:
+  > Spawning is permitted in the yellow and orange areas:
   > # <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_areaRestriction.png" width="600">   
 </details>
 <details>
