@@ -176,7 +176,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > 
   > #### Example: 
   > ```
-  > "temperature": [{"start": 0,"end": 500}]
+  > "temperature": [{"start": -2.0,"end": 2.0}]
   > ```
 </details>
 <details>
@@ -200,7 +200,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > 
   > #### Example: 
   > ```
-  > "lightLevels": [{"start": 0, "end":  265}]
+  > "lightLevels": [{"start": 0, "end":  15}]
   > ```
 </details>
 <details>
@@ -236,7 +236,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > 
   > #### Example: 
   > ```
-  > "disallowedBlocks": ["minecraft:path"]
+  > "disallowedBlocks": ["minecraft:oak_leaves"]
   > ```
 </details>
 <details>
