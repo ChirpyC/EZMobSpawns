@@ -7,9 +7,9 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
 <details>
   <summary> <code>enableDebug</code> Enables or disables debug messages to the log.</summary>
 
-  ####
-
-  Defaults to false.
+  > ##
+  >
+  > Defaults to false.
 </details>
 <details>
   <summary> <code>chunkRange</code> The number of chucks to select around each player to use for further spawn checks.</summary>
