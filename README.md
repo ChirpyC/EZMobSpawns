@@ -240,7 +240,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > ```
 </details>
 <details>
-  <summary> <code>areaRestriction</code> Restricts spawning to a specified, repeatable area.</summary>
+  <summary> <code>areaRestriction</code> Restricts spawning to a series of repeating areas.</summary>
 
   > ##
   > 
@@ -275,7 +275,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   >       {"startX":-80, "startZ": -80, "endX": 80, "endZ": 80}
   >     ]
   > ```
-  > Spawning is permitted in the yellow region:
+  > Spawning is permitted in the yellow area:
   > # <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_blacklistedAreas.png" width="600">   
 </details>
 <details>
