@@ -8,7 +8,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   <summary> <code>enableDebug</code> Enables or disables debug messages to the log.</summary>
 </details>
 <details>
-  <summary> <code>chunkRange</code> The range of chucks to attempts spawns for around each player.</summary>
+  <summary> <code>chunkRange</code> the number f chucks to select around each player to use for further spawn checks.</summary>
 
   ####
 
@@ -19,9 +19,25 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
 </details>
 <details>
   <summary> <code>chunkCoverage</code> The percentage of loaded chunks to run spawning on.</summary>
+  
+  ####
+
+  ##### Example: 3 players, chunkRange = 3, chunkCoverage = 30%
+
+  The yellow squares show the chunks that have been randomly selected for additional spawn checks:
+  <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_chunk_coverage.png" width="600">
 </details>
 <details>
   <summary> <code>maxPtsPerChunk</code> The maximum number of points within a chunk to run spawn checks</summary>
+  
+  ####
+
+  Defaults to 100.
+
+  ##### Example: 1 players, chunkRange = 3, chunkCoverage = 44%, maxPtsPerChunk = 3
+
+  The red x's show locations that have been randomly selected as potential spawn points:
+  <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_maxPtsPerChunk.png" width="600">
 </details>
 
 ## Spawn Group Settings
