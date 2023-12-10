@@ -75,7 +75,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > 
   > #### Example: 
   > 
-  > if the ```mobs``` array has 10 different mobs, and ```totalMobsToPick``` is 3, 3 entries will be selected from the array and the algorithm will run placement checks for each of the 3 selected mobs.
+  > if the ```mobs``` array has 10 different mobs, and ```totalMobsToPick``` is 3, 3 of the 10 entries will be selected (repeats allowed) and the algorithm will run the fine-grained placement checks for each of the 3 selected mobs.
 </details>
 <details>
   <summary> <code>dimensions</code> A list of allowed dimensions.</summary>
@@ -89,7 +89,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
 
   > ##
   > 
-  > Defaults to all vanilla overworld if omitted.
+  > Defaults to all vanilla overworld biomes if omitted.
 </details>
 <details>
   <summary> <code>placement</code> A list of allowed placements</summary>
@@ -105,9 +105,9 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
 
   > ##
   > 
-  > Accepts integer values 0 to 100 (inclusive). Defaults to 100 if omitted.
+  > Accepts float values 0.0 to 1.0 (inclusive). Defaults to 1.0 if omitted.
   > 
-  > A value of 100 will always run further spawn checks, while a value of 0 will never run further spawn checks (and will consequently never trigger any spawns).
+  > A value of 1.0 will always run further spawn checks, while a value of 0.0 will never run further spawn checks (and will consequently never trigger any spawns).
 </details>
 <details>
   <summary> <code>ticksBetweenAttempts</code> The minimum number of server ticks between spawn attempts.</summary>
