@@ -240,14 +240,14 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > ```
 </details>
 <details>
-  <summary> <code>regionRestriction</code> Restricts spawning to a specified, repeatable area.</summary>
+  <summary> <code>areaRestriction</code> Restricts spawning to a specified, repeatable area.</summary>
 
   > ##
   > 
-  > - *regionSize*: the size of the region in chunks
-  > - *repeat*: how frequently to repeat the region
-  > - *offsestX*: (optional) the number chunks to offset the region by on the x-axis. If omitted, defaults to 0
-  > - *offsestZ*: (optional) the number chunks to offset the region by on the z-axis. If omitted, defaults to 0
+  > - *areaSize*: the size of the area in chunks
+  > - *repeat*: how frequently to repeat the area
+  > - *offsestX*: (optional) the number chunks to offset the area by on the x-axis. If omitted, defaults to 0
+  > - *offsestZ*: (optional) the number chunks to offset the area by on the z-axis. If omitted, defaults to 0
   > 
   > #### Example: 
   > ```
@@ -255,14 +255,14 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > ```
 </details>
 <details>
-  <summary> <code>blacklistedRegions</code> Prevents spawning within specified areas.</summary>
+  <summary> <code>blacklistedAreas</code> Prevents spawning within specified areas.</summary>
 
   > ##
   > 
-  > - *startX*: the min block x-coordinate of the region
-  > - *endX*: the max block x-coordinate of the region
-  > - *startZ*: the min block z-coordinate of the region
-  > - *endZ*: the max block z-coordinate of the region
+  > - *startX*: the min block x-coordinate of the area
+  > - *endX*: the max block x-coordinate of the area
+  > - *startZ*: the min block z-coordinate of the area
+  > - *endZ*: the max block z-coordinate of the area
   > 
   > #### Example: 
   > ```
