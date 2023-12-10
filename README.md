@@ -265,8 +265,8 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > ##
   > 
   > - *startX*: the min block x-coordinate of the area
-  > - *endX*: the max block x-coordinate of the area
   > - *startZ*: the min block z-coordinate of the area
+  > - *endX*: the max block x-coordinate of the area
   > - *endZ*: the max block z-coordinate of the area
   > 
   > #### Example: 
