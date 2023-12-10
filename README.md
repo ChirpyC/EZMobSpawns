@@ -251,7 +251,10 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > 
   > #### Example: 
   > ```
-  > "regionRestriction": {"regionSize":4, "repeat": 10, "offsestX": 1, "offsestZ": 3}
+  > "areaRestriction":[
+        {"areaSize":1, "repeat": 2, "offsestX": 0, "offsestZ": 0},
+        {"areaSize":1, "repeat": 2, "offsestX": 1, "offsestZ": 1}
+      ]
   > ```
 </details>
 <details>
@@ -266,7 +269,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > 
   > #### Example: 
   > ```
-  > "blacklistedRegions":  [
+  > "blacklistedAreas":  [
   >       {"startX":-256, "endX": 256, "startZ": -256, "endZ": 256},
   >       {"startX":1000, "endX": 1100, "startZ": 2400, "endZ": 2500},
   >       {"startX":-3000, "endX": -2900, "startZ": 600, "endZ": 700}
