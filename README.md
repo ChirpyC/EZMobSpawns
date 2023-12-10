@@ -210,9 +210,9 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > 
   > Defaults to all blocks if omitted.
   > 
-  > #### Example: Will only allow spawns if potential spawn location is near a hay block:
+  > #### Example: Will only allow spawns if the potential spawn location is near a sunflower:
   > ```
-  > "requiredBlocks": ["minecraft:hay"]
+  > "requiredBlocks": ["minecraft:sunflower"]
   > ```
 </details>
 <details>
