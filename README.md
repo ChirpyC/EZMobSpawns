@@ -252,9 +252,9 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > #### Example: 
   > ```
   > "areaRestriction":[
-        {"areaSize":1, "repeat": 2, "offsestX": 0, "offsestZ": 0},
-        {"areaSize":1, "repeat": 2, "offsestX": 1, "offsestZ": 1}
-      ]
+  >      {"areaSize":1, "repeat": 2, "offsestX": 0, "offsestZ": 0},
+  >      {"areaSize":1, "repeat": 2, "offsestX": 1, "offsestZ": 1}
+  >    ]
   > ```
 </details>
 <details>
