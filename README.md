@@ -270,7 +270,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > #### Example: 
   > ```
   > "blacklistedAreas":  [
-  >       {"startX":-256, "endX": -256, "startZ": 256, "endZ": 256}
+  >       {"startX":-80, "endX": -80, "startZ": 80, "endZ": 80}
   >     ]
   > ```
 </details>
