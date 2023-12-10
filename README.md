@@ -26,7 +26,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > ##### Example: 3 players, chunkRange = 3, chunkCoverage = 0.3
   >
   > The yellow squares show the chunks that have been randomly selected for additional spawn checks:
-  > # <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_chunk_coverage.png" width="600">
+  > # <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_chunkCoverage.png" width="600">
 </details>
 <details>
   <summary> <code>maxPtsPerChunk</code> The max number of potential spawn locationos to pick per selected chunk.</summary>
@@ -251,11 +251,13 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > 
   > #### Example: 
   > ```
-  > "areaRestriction":[
+  > "areaRestrictions":[
   >      {"areaSize":1, "repeat": 2, "offsestX": 0, "offsestZ": 0},
   >      {"areaSize":1, "repeat": 2, "offsestX": 1, "offsestZ": 1}
   >    ]
   > ```
+  > Spawning is permitted in the yellow and orange regions:
+  > # <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_areaRestriction.png" width="600">   
 </details>
 <details>
   <summary> <code>blacklistedAreas</code> Prevents spawning within specified areas.</summary>
@@ -273,6 +275,8 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   >       {"startX":-80, "endX": -80, "startZ": 80, "endZ": 80}
   >     ]
   > ```
+  > Spawning is permitted in the yellow region:
+  > # <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_blacklistedAreas.png" width="600">   
 </details>
 <details>
   <summary> <code>enableDebug</code> Enables or disables debug messages to the log.</summary>
