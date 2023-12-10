@@ -272,7 +272,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > #### Example: 
   > ```
   > "blacklistedAreas":  [
-  >       {"startX":-80, "endX": -80, "startZ": 80, "endZ": 80}
+  >       {"startX":-80, "startZ": -80, "endX": 80, "endZ": 80}
   >     ]
   > ```
   > Spawning is permitted in the yellow region:
