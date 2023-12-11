@@ -1,5 +1,13 @@
-# EZMobSpawns Algorithm
+# EZMobSpawns 
 
+## Purpose
+EZMobSpawns is a utility mod that provides an additional was to add mob spawns to the game, while also affording the user control over how, when, and where mobs spawn. It standardizes spawn rates accross dimensions and biomes (both modded and unmodded), and introduces a number of additional criteria which can be used to customize spawn mechanics. Also serves to sidestep several vanilla spawn mechanics which can prove unintitive to casual modders and difficult to change without heavy use of mixins / modding capabilities.
+
+EZMobSpawns can accept multiple config files as long as they begin with the prefix _ez_mob_spawn_. 
+
+Note: this mod does not remove, or otherwise change, existing spawn rules (whether in place through vanilla or modded means), it only serves to provide another way to add mobs to the world. 
+
+## Algorithm Overview
 1. The algorithm begins by taking `chunkRange`x`chunkRange` chunks from around each player.
 2. A random subset of the chunks from step 1 is selected by taking a total of `chunkCoverage`% chunks from the entire chunk set.
 3. Each of the spawn groups is then updated for each of the chunks selected in step 3. Each spawn group waits at least `ticksBetweenAttempts` server ticks between spawn attempts. 
@@ -24,6 +32,12 @@
    - Checks that the potential spawn location is near any required blocks defined in `requiredBlocks`.
   
 8. If all of the fine-grained checks pass, the mob is added to the world and the group enters a cooldown period defined by `spawnCoolDown` after which it will resume regular tick updates.
+
+## Performance Considerations
+
+- For best performance, try to eliminate chunks from consideration early in the spawning process. In general, it is better to rule out a spawn attempt during the coarse-checks rather than the fine-grained checks as they can be slower.
+- For groups that rely heavily on the fine-grained checks, consider using a longer `spawnCoolDown` to help prevent lag when doing the entity/placement calculations. 
+- Excercise caution when designing a new spawn config and always try out any new settings in a test world to ensure that spawn rates are reasonable.
 
 # EZMobSpawns JSON 
 
