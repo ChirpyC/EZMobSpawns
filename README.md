@@ -1,7 +1,7 @@
 # EZMobSpawns 
 
 ## Purpose
-EZMobSpawns is a utility mod that provides an additional was to add mob spawns to the game, while also affording the user control over how, when, and where mobs spawn. It standardizes spawn rates accross dimensions and biomes (both modded and unmodded), and introduces a number of additional criteria which can be used to customize spawn mechanics. Also serves to sidestep several vanilla spawn mechanics which can prove unintitive to casual modders and difficult to change without heavy use of mixins / modding capabilities.
+EZMobSpawns is a utility mod that provides an additional ways to add mob spawns to the game, while also affording the user control over how, when, and where mobs spawn. It standardizes spawn rates accross dimensions and biomes (both modded and unmodded), and introduces a number of additional criteria which can be used to customize spawn mechanics. Also serves to sidestep several vanilla spawn mechanics which can prove unintitive to casual modders and difficult to change without heavy use of mixins / modding capabilities.
 
 EZMobSpawns can accept multiple config files as long as they begin with the prefix _ez_mob_spawn_. 
 
