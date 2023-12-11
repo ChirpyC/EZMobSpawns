@@ -2,8 +2,8 @@
 
 1. The algorithm begins by taking `chunkRange`x`chunkRange` chunks from around each player.
 2. A random subset of the chunks from step 1 is selected by taking a total of `chunkCoverage`% chunks from the entire chunk set.
-3. Each of the chunks selected in step 3 then determines if enough time has elapsed for that spawn group to activate. Time between attempts is defined by `ticksBetweenAttempts` in server ticks. 
-4. For each activated spawn group, a coarse-check is run to quickly determine if the group applies to that chunk. The coarse-check takes the center block of the chunk and runs the following tests:
+3. Each of the spawn groups is then updated for each of the chunks selected in step 3. Each spawn group waits at least `ticksBetweenAttempts` server ticks between spawn attempts. 
+4. If the spawn group is activated, a coarse-check is run to quickly determine if the group applies to that chunk. The coarse-check takes the chunk's center block and runs the following tests:
    - Checks to see if the random `chanceToAttemptSpawns` activates.
    - Checks that the chunk is in a valid dimension as defined in `dimensions`. 
    - Checks that the chunk is in a valid biome as defined in `biomes` (supports both biome ids and biome tags).
