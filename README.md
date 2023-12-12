@@ -39,9 +39,3 @@ Note: this mod does not remove, or otherwise change, existing spawn rules (wheth
 - For groups that rely heavily on the fine-grained checks, consider using a longer `spawnCoolDown` to help prevent lag when doing the entity/placement calculations. 
 - Excercise caution when designing a new spawn config and always try out any new settings in a test world to ensure that spawn rates are reasonable.
 
-
-
-  > ##
-  >
-  > Defaults to false.
-</details>
