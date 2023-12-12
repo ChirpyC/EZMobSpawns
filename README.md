@@ -96,7 +96,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > - *min*: (optional) the minimum number of the mob to spawn. If omitted, defaults to 1
   > - *max*: (optional) the maximum number of the mob to spawn. If omitted, defaults to 1
   > - *weight*: (optional) allows weighting of the mobs. If omitted, defaults to equal chance for each mob
-  > - *limit*: (optional) limits the total number of that mob within a 256x256 range around the poential spawn point. If omitted, does not enforce a limit
+  > - *limit*: (optional) limits the total number of that mob within a 256x256 range around the potential spawn point. If omitted, defaults to 8. Assigning a value of -1 will remove the limit checks (do so at your own risk).
   > 
   > #### Example: 
   > ```
