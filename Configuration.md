@@ -124,7 +124,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > Accepts positive integer values. Defaults to 6000 if omitted.
 </details>
 <details>
-  <summary><code>runImmediately</code> Sets wether the spawn group should run immediately or wait at least `ticksBetweenAttempts` ticks before attempting to spawn mobs for newly loaded chunks.</summary>
+  <summary><code>runImmediately</code> Sets wether the spawn group should attempt to spawn mobs for newly loaded chunks imidiately or after a delay.</summary>
 
   > ##
   > 
