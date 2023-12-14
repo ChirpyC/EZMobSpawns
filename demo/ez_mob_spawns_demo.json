@@ -1,0 +1,159 @@
+{
+"globalSettings": {
+  "chunkRange": 4,
+  "chunkCoverage": 1.0,
+  "ptsPerChunk": 100,
+  "spawnGroupDefaults": {
+    "groupName": "Default to Quick Ticks",
+    "runImmediately": true,
+    "ticksBetweenAttempts": 100,
+    "spawnCoolDown": 300
+  }
+},
+"spawnGroups":
+  [
+    {
+      "groupName": "Full Moon Wolves",
+      "mobs": [
+        {"mob":"minecraft:wolf", "min": 1, "max": 3, "weight": 1, "limit": 10}
+      ],
+      "timeframes": [{"start": 12000, "end": 24000}],
+      "moonphases": ["full"]
+    },
+    {
+      "groupName": "Thunder Chickens",
+      "mobs": [
+        {"mob":"minecraft:chicken", "min": 1, "max": 3, "weight": 1, "limit": 10}
+      ],
+      "weather": ["storm"]
+    },
+    {
+      "groupName": "Dark Llamas",
+      "mobs": [
+        {"mob":"minecraft:llama", "min": 1, "max": 3, "weight": 1, "limit": 10}
+      ],
+      "placement": ["underground"],
+      "lightLevels": [{"start": 0, "end":  3}]
+    },
+    {
+      "groupName": "Rain Fish",
+      "mobs": [
+        {"mob":"minecraft:salmon", "min": 1, "max": 1, "weight": 1, "limit": 100},
+        {"mob":"minecraft:cod", "min": 1, "max": 1, "weight": 4, "limit": 100},
+        {"mob":"minecraft:tropical_fish", "min": 1, "max": 1, "weight": 0, "limit": 100}
+      ],
+      "weather": ["rain"]
+    },
+    {
+      "groupName": "Nether Cats",
+      "mobs": [
+        {"mob":"minecraft:cat", "min": 1, "max": 1, "weight": 1, "limit": 3}
+      ],
+      "dimensions": ["minecraft:the_nether"],
+      "placement": ["underground"]
+    },
+    {
+      "groupName": "Aquatic Donkeys",
+      "mobs": [
+        {"mob":"minecraft:donkey", "min": 1, "max": 1, "weight": 1, "limit": 3}
+      ],
+      "placement": ["in_water"]
+    },
+    {
+      "groupName": "Drowning Mules",
+      "mobs": [
+        {"mob":"minecraft:mule", "min": 1, "max": 1, "weight": 1, "limit": 3}
+      ],
+      "placement": ["cave_water"]
+    },
+    {
+      "groupName": "Fire Bats",
+      "mobs": [
+        {"mob":"minecraft:bat", "min": 1, "max": 10, "weight": 1, "limit": 10}
+      ],
+      "dimensions": ["minecraft:overworld", "minecraft:the_nether"],
+      "placement": ["in_lava"]
+    },
+    {
+      "groupName": "Deep Frogs",
+      "mobs": [
+        {"mob":"minecraft:frog", "min": 1, "max": 1, "weight": 1, "limit": 3}
+      ],
+      "placement": ["underground"],
+      "yRanges": [{"start": -64, "end":  0}]
+    },
+    {
+      "groupName": "Arctic Parrots",
+      "mobs": [
+        {"mob":"minecraft:parrot", "min": 1, "max": 3, "weight": 1, "limit": 10}
+      ],
+      "temperatures": [{"start": -2.0,"end": 0.0}]
+    },
+    {
+      "groupName": "Sunflower Guardians",
+      "mobs": [
+        {"mob":"minecraft:iron_golem", "min": 1, "max": 3, "weight": 1, "limit": 3}
+      ],
+      "requiredBlocks": ["minecraft:sunflower"]
+    },
+    {
+      "groupName": "Stratospheric Dolphins",
+      "mobs": [
+        {"mob":"minecraft:dolphin", "min": 3, "max": 3, "weight": 1, "limit": 50}
+      ],
+      "placement": ["air"],
+      "yRanges": [{"start": 175, "end":  360}]
+    },
+    {
+      "groupName": "Checkerboard of Squids: Regular Squid Squares",
+      "mobs": [
+        {"mob":"minecraft:squid", "min": 5, "max": 5, "weight": 1, "limit": 100}
+      ],
+      "areaRestriction":[
+        {"areaSize":1, "repeat": 1, "offsetX": 0, "offsetZ": 0},
+        {"areaSize":1, "repeat": 1, "offsetX": 1, "offsetZ": 1}
+      ]
+    },
+    {
+      "groupName": "Checkerboard of Squids: Glow Squid Squares",
+      "mobs": [
+        {"mob":"minecraft:glow_squid", "min": 5, "max": 5, "weight": 1, "limit": 100}
+      ],
+      "areaRestriction":[
+        {"areaSize":1, "repeat": 1, "offsetX": 0, "offsetZ": 1},
+        {"areaSize":1, "repeat": 1, "offsetX": 1, "offsetZ": 0}
+      ]
+    },
+    {
+      "groupName": "Faraway Foxes",
+      "mobs": [
+        {"mob":"minecraft:fox", "min": 1, "max": 1, "weight": 1, "limit": 30}
+      ],
+      "blacklistedAreas":  [
+        {"startX":-256, "endX": 256, "startZ": -256, "endZ": 256}
+      ]
+    },
+    {
+      "groupName": "(Biome) Tagged Turtles",
+      "mobs": [
+        {"mob":"minecraft:turtle", "min": 1, "max": 5, "weight": 1, "limit": 30}
+      ],
+      "biomes": ["c:floral", "forge:is_peak", "minecraft:is_taiga"]
+    },
+    {
+      "groupName": "Glowing Goats",
+      "mobs": [
+        {"mob":"minecraft:goat", "min": 1, "max": 1, "weight": 1, "limit": 3}
+      ],
+      "effects": [{"effect":"minecraft:glowing", "duration": 6000}]
+    },
+    {
+      "groupName": "Noteworthy NPCs",
+      "mobs": [
+        {"mob":"minecraft:villager", "min": 1, "max": 1, "weight": 1, "limit": 5}
+      ],
+      "names": ["Sam", "Tim", "Bob", "Lou", "Wyn", "Ann", "Meg", "Sue"],
+      "announcements": ["has spawned in!", "joins the battle!", "arrived!", "has awoken!", "wants to fight!", "entered the area!"]
+    }
+  ]
+}
