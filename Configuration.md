@@ -286,6 +286,41 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > # <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_blacklistedAreas.png" width="600">   
 </details>
 <details>
+  <summary> <code>effects</code> A list of effects to apply to any spawned mobs.</summary>
+
+  > ##
+  > 
+  > - *effect*: the name of the effect
+  > - *durration*: the number of ticks the effect should be active
+  > 
+  > #### Example: 
+  > ```
+  > "effects": [{"effect":"minecraft:glowing", "duration": 6000}]
+  > ```
+</details>
+<details>
+  <summary> <code>names</code> A list of names to apply to any spawned mobs.</summary>
+
+  > ##
+  > 
+  > #### Example: 
+  > ```
+  > "names": ["Sam", "Tim", "Bob", "Lou", "Wyn", "Ann", "Meg", "Sue"]
+  > ```
+</details>
+<details>
+  <summary> <code>announcements</code> A list of announcements to display in chat when a mob spawns in.</summary>
+
+  > ##
+  > 
+  > Announcement messages take the form "A <mob_name> <random_message>". If a name is given in the `names` property, the announcement will start with the name instead.
+  >   
+  > #### Example: 
+  > ```
+  > "announcements": ["has spawned in!", "has awoken!", "wants to fight!", "entered the area!"]
+  > ```
+</details>
+<details>
   <summary> <code>enableDebug</code> Enables or disables debug messages to the log.</summary>
   > ##
   >
