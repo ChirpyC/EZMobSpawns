@@ -286,10 +286,12 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > # <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_blacklistedAreas.png" width="600">   
 </details>
 <details>
-  <summary> <code>effects</code> A list of effects to apply to any spawned mobs.</summary>
+  <summary> <code>effects</code> A list of effects to apply to spawned mobs.</summary>
 
   > ##
   > 
+  > For each mob spawned from the group, a single effect from this list is randomly selected and applied to the new mob.
+  >  
   > - *effect*: the name of the effect
   > - *durration*: the number of ticks the effect should be active
   > 
@@ -299,10 +301,10 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > ```
 </details>
 <details>
-  <summary> <code>names</code> A list of names to apply to any spawned mobs.</summary>
+  <summary> <code>names</code> A list of names to apply to spawned mobs.</summary>
 
   > ##
-  > 
+  >
   > #### Example: 
   > ```
   > "names": ["Sam", "Tim", "Bob", "Lou", "Wyn", "Ann", "Meg", "Sue"]
