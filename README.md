@@ -8,6 +8,8 @@ EZMobSpawns accepts json files in the config directory that start with the prefi
 
 See the [demo config](https://github.com/ChirpyC/EZMobSpawns/blob/main/demo/ez_mob_spawns_demo.json) for an example of how to get started. 
 
-Visit the [project on Curseforge](https://curseforge.com/minecraft/mc-mods/ezmobspawns) for releases.
+For more information on the config format, see the JSON Configuration docs [here](https://github.com/ChirpyC/EZMobSpawns/blob/main/Configuration.md). 
 
-Details on the spawn mechanics can be found [here](https://github.com/ChirpyC/EZMobSpawns/blob/main/Algorithm.md).
+Details on the spawning mechanics and performance considerations can be found [here](https://github.com/ChirpyC/EZMobSpawns/blob/main/Algorithm.md).
+
+Visit the [project on Curseforge](https://curseforge.com/minecraft/mc-mods/ezmobspawns) for releases.
