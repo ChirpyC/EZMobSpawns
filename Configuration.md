@@ -40,6 +40,12 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   > The red x's show locations that have been randomly selected as potential spawn points:
   > <img src="https://github.com/ChirpyC/EZMobSpawns/blob/main/wikiPics/ex_maxPtsPerChunk.png" width="600">
 </details>
+<summary> <code>spawnGroupDefaults</code> Defaults here will be applied to all spawn groups.</summary>
+
+  > ##
+  > 
+  > Follows the same format as a regular spawn group entry (see next section)
+</details>
 
 ## Spawn Group Settings
 
