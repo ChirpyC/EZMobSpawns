@@ -9,7 +9,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
   
   > ##
   >
-  > Defaults to 3.
+  > Defaults to 4.
   >
   > ##### Example: chunkRange = 3
   >
