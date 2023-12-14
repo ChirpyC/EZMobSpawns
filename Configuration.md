@@ -45,7 +45,7 @@ Reads any files in the config directory that start with the prefix *"ez_mob_spaw
 
   > ##
   > 
-  > Follows the same format as a regular spawn group entry (see next section).
+  > Follows the same format as a regular spawn group entry (see next section: Spawn Group Settings).
 </details>
 
 ## Spawn Group Settings
