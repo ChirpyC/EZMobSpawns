@@ -1,0 +1,24 @@
+{
+    "schemaVersion": 1,
+    "id": "ezmobspawns",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "license": "${license}",
+    "icon": "assets/${mod_id}/${mod_id}.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+          "com.chirpycricket.ezmobspawns.EZMobSpawnsFabric"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.13",
+        "minecraft": ">=1.16.5",
+        "java": ">=8"
+    }
+}
+  
