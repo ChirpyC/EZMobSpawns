@@ -47,7 +47,8 @@ public class SpawnTicker {
 
         //once a day, remove inactive chunks from map to keep size reasonable
         tick++;
-        if(tick%24000 == 0){
+        if(tick%1000 == 0){
+//        if(tick%24000 == 0){
             pruneChunkMap(loadedChunks);
         }
     }
@@ -82,9 +83,11 @@ public class SpawnTicker {
     }
 
     private static void pruneChunkMap(HashSet<ChunkPos> activeChunks){
-        for(ChunkPos chunkPos : chunkMap.keySet()){
-            if(!activeChunks.contains(chunkPos)) {
-                chunkMap.remove(chunkPos);
+        Iterator<Map.Entry<ChunkPos, HashMap<SpawnPropertyGroup, TickData>>> itr = chunkMap.entrySet().iterator();
+        while(itr.hasNext()) {
+            Map.Entry<ChunkPos, HashMap<SpawnPropertyGroup, TickData>> entry = itr.next();
+            if(!activeChunks.contains(entry.getValue())) {
+                itr.remove();
             }
         }
     }
