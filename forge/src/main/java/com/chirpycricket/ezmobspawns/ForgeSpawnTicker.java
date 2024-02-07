@@ -1,6 +1,5 @@
 package com.chirpycricket.ezmobspawns;
 
-import com.chirpycricket.ezmobspawns.platform.TickData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
@@ -15,7 +14,7 @@ import static com.chirpycricket.ezmobspawns.ForgePlacementHelper.getValidLocatio
 public class ForgeSpawnTicker {
 
     static int tick = 0;
-    protected static HashMap<ChunkPos, HashMap<ForgeSpawnPropertyGroup, TickData>> chunkMap = new HashMap<>();
+    protected static HashMap<ChunkPos, HashMap<ForgeSpawnPropertyGroup, ForgeTickData>> chunkMap = new HashMap<>();
 
     public static void onTick(ServerWorld world) {
         if(world.players().size() == 0) return;
@@ -39,7 +38,7 @@ public class ForgeSpawnTicker {
         //pick subset of chunks and try triggering them
         for(ChunkPos chunkPos : selectedChunks) {
             for(ForgeSpawnPropertyGroup sp : chunkMap.get(chunkPos).keySet()){
-                TickData td = chunkMap.get(chunkPos).get(sp);
+                ForgeTickData td = chunkMap.get(chunkPos).get(sp);
                 td.tick(tick);
                 if (td.shouldTrigger(tick)) {
                     trySpawns(world, chunkPos, sp, td);
@@ -78,21 +77,23 @@ public class ForgeSpawnTicker {
                 chunkMap.put(chunkPos, new HashMap<>());
                 for(ForgeSpawnPropertyGroup sp : ForgeConfigReader.spawnProperties){
                     sp.chunkCheck(world, new BlockPos(chunkPos.getWorldPosition().getX()+8, 32, chunkPos.getWorldPosition().getZ()+8));
-                    chunkMap.get(chunkPos).put(sp, new TickData(sp.ticksBetweenSpawnAttempts, sp.spawnCoolDown, sp.runImmediately));
+                    chunkMap.get(chunkPos).put(sp, new ForgeTickData(sp.ticksBetweenSpawnAttempts, sp.spawnCoolDown, sp.runImmediately));
                 }
             }
         }
     }
 
     private static void pruneChunkMap(HashSet<ChunkPos> activeChunks){
-        for(ChunkPos chunkPos : chunkMap.keySet()){
-            if(!activeChunks.contains(chunkPos)) {
-                chunkMap.remove(chunkPos);
+        Iterator<Map.Entry<ChunkPos, HashMap<ForgeSpawnPropertyGroup, ForgeTickData>>> itr = chunkMap.entrySet().iterator();
+        while(itr.hasNext()) {
+            Map.Entry<ChunkPos, HashMap<ForgeSpawnPropertyGroup, ForgeTickData>> entry = itr.next();
+            if(!activeChunks.contains(entry.getValue())) {
+                itr.remove();
             }
         }
     }
 
-    private static void trySpawns(ServerWorld world, ChunkPos chunkPos, ForgeSpawnPropertyGroup sp, TickData td) {
+    private static void trySpawns(ServerWorld world, ChunkPos chunkPos, ForgeSpawnPropertyGroup sp, ForgeTickData td) {
         BlockPos pos = new BlockPos(chunkPos.getWorldPosition().getX()+8, 32, chunkPos.getWorldPosition().getZ()+8);
         sp.debugMsg("triggered @ chunk " + pos.getX() + " " + pos.getY() + " " + pos.getZ());
 

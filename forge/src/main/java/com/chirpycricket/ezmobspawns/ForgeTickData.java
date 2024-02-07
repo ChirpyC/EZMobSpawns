@@ -1,10 +1,10 @@
 package com.chirpycricket.ezmobspawns;
 
-public class TickData{
+public class ForgeTickData {
 
     int lastTick = 0, triggerDelay = 6000, coolDownDelay = 6000;
     boolean isInCooldown = false;
-    public TickData(int triggerDelay, int coolDownDelay, boolean startImmediately){
+    public ForgeTickData(int triggerDelay, int coolDownDelay, boolean startImmediately){
         this.triggerDelay = triggerDelay;
         this.coolDownDelay = coolDownDelay;
         if(startImmediately){lastTick = -triggerDelay-1;}

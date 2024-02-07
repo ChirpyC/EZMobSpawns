@@ -1,6 +1,6 @@
-package com.chirpycricket.ezmobspawns.platform;
+package com.chirpycricket.ezmobspawns;
 
-public class TickData{
+public class TickData {
 
     int lastTick = 0, triggerDelay = 6000, coolDownDelay = 6000;
     boolean isInCooldown = false;

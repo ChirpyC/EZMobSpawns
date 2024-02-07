@@ -82,9 +82,11 @@ public class SpawnTicker {
     }
 
     private static void pruneChunkMap(HashSet<ChunkPos> activeChunks){
-        for(ChunkPos chunkPos : chunkMap.keySet()){
-            if(!activeChunks.contains(chunkPos)) {
-                chunkMap.remove(chunkPos);
+        Iterator<Map.Entry<ChunkPos, HashMap<SpawnPropertyGroup, TickData>>> itr = chunkMap.entrySet().iterator();
+        while(itr.hasNext()) {
+            Map.Entry<ChunkPos, HashMap<SpawnPropertyGroup, TickData>> entry = itr.next();
+            if(!activeChunks.contains(entry.getValue())) {
+                itr.remove();
             }
         }
     }
